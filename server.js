@@ -7,23 +7,23 @@ app.use(morgan('combined'));
 
 var articles={
     'article-one':{
-     title:"Article One",
-     heading: "Primary Education Article One",
-     date:"Sept 21st 2016",
+     title:'Article One',
+     heading: 'Primary Education Article One',
+     date:'Sept 21st 2016',
      content:`The Indian government lays emphasis on primary education, also referred to as elementary education, to children aged 6 to 14 years old.The Indian government has also banned child labour in order to ensure that the children do not enter unsafe working conditions.However, both free education and the ban on child labour are difficult to enforce due to economic disparity and social conditions.80% of all recognised schools at the elementary stage are government run or supported, making it the largest provider of education in the country. (Source from:Article One)`
     },    
     
      'article-two':{
-     title:"Article Two",
-     heading: "Primary Education Article Two",
-     date:"Sept 21st 2016",
+     title:'Article Two',
+     heading: 'Primary Education Article Two',
+     date:'Sept 21st 2016',
      content:`The Indian government lays emphasis on primary education, also referred to as elementary education, to children aged 6 to 14 years old.The Indian government has also banned child labour in order to ensure that the children do not enter unsafe working conditions.However, both free education and the ban on child labour are difficult to enforce due to economic disparity and social conditions.80% of all recognised schools at the elementary stage are government run or supported, making it the largest provider of education in the country.(Source from:Article Two)`
     },  
     
     'article-three':{
-     title:"Article Three",
-     heading: "Primary Education Article Three",
-     date:"Sept 21st 2016",
+     title:'Article Three',
+     heading: 'Primary Education Article Three',
+     date:'Sept 21st 2016',
      content:`The Indian government lays emphasis on primary education, also referred to as elementary education, to children aged 6 to 14 years old.The Indian government has also banned child labour in order to ensure that the children do not enter unsafe working conditions.However, both free education and the ban on child labour are difficult to enforce due to economic disparity and social conditions.80% of all recognised schools at the elementary stage are government run or supported, making it the largest provider of education in the country.(Source from:Article Three)`
     }
 };
