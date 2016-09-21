@@ -31,5 +31,5 @@ h2 {
 }
 .container{
     text-align:justify;
-    background:yellow;
+    border-style:solid;
 }
