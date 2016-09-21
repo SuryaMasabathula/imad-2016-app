@@ -45,7 +45,7 @@ function createTemplate(data)
       <body>
           <div class="container">
           <h1> ${title} </h1>  
-          <h2>Here it starts... ${title} </h2>
+          <h2>Here it starts... </h2>
           <h3>${heading}</h3>
           <p>
            ${content}
@@ -54,7 +54,7 @@ function createTemplate(data)
       </body>
     </html>`;
     
-        return htmlObject;
+    return htmlObject;
 }
 
 app.get('/', function (req, res) {
