@@ -12,32 +12,39 @@ var articleOne={
  content:`The Indian government lays emphasis on primary education, also referred to as elementary education, to children aged 6 to 14 years old.The Indian government has also banned child labour in order to ensure that the children do not enter unsafe working conditions.However, both free education and the ban on child labour are difficult to enforce due to economic disparity and social conditions.80% of all recognised schools at the elementary stage are government run or supported, making it the largest provider of education in the country.`
 };
 
-var htmlObject={
-    <html>
-  <head>
-        <title>${title}</title>
-  </head>
-  <body>
-      <div class="container">
-      <h1> ${title} </h1>  
-      <h2>Here it starts... ${title} </h2>
-      <h3>${heading}</h3>
-      <p>
-       ${content}
-      </p>
-     </div>
-  </body>
-</html>
+function CreateTemplete(data)
+{
+    title=data.title,
+    date=data.date,
+    heading=data.heading,
+    content=data.content
     
-};
-
+    var htmlObject=`
+        <html>
+      <head>
+            <link href="/ui/style.css" rel="stylesheet"/>
+            <title>${title}</title>
+      </head>
+      <body>
+          <div class="container">
+          <h1> ${title} </h1>  
+          <h2>Here it starts... ${title} </h2>
+          <h3>${heading}</h3>
+          <p>
+           ${content}
+          </p>
+         </div>
+      </body>
+    </html>';
+        return htmlObject;
+}
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.create(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article_one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'articleOne.html'));
+  res.createTemplate(articleOne);
 });
 
 app.get('/article_two', function (req, res) {
