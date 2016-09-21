@@ -32,5 +32,6 @@ h2 {
 .container{
     text-align:justify;
     border-style:solid;
+    border-color:green;
     padding:10px;
 }
