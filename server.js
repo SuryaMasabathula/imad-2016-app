@@ -32,10 +32,10 @@ var articles={
 
 function CreateTemplete(data)
 {
-    title=data.title,
-    date=data.date,
-    heading=data.heading,
-    content=data.content
+    title=data.title;
+    date=data.date;
+    heading=data.heading;
+    content=data.content;
     
     var htmlObject=`
         <html>
@@ -53,28 +53,19 @@ function CreateTemplete(data)
           </p>
          </div>
       </body>
-    </html>';
+    </html>`;
     
         return htmlObject;
 }
-
 app.get('/', function (req, res) {
   res.create(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/:articleName', function (req, res) {
-    //articleName==article-One
+    //articleName==article-one
     //articles[articleName]=={} content object for article one
     var articleName=req.params.articleName;
   res.createTemplate(articles[articleName]);
-});
-
-app.get('/article_two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'articleTwo.html'));
-});
-
-app.get('/article_three', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'articleThree.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
