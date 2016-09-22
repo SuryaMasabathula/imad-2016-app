@@ -5,5 +5,5 @@ element.innerHTML='Hello Heloo Hello............................................
 
 var img=document.getElementById('madi');
 img.onclick=function(){
-    img.style.marginright='200px';
+    img.style.marginLeft='200px';
 };
