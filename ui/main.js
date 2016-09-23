@@ -13,5 +13,5 @@ function marginRight(){
 }
 
 img.onclick=function(){
-    var interval=setInterval(marginRight(),100);
+    var interval=setInterval(marginRight,50);
 };
